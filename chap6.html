@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <style>
+        .container{
+            display:flex;
+           
+        }
+        .box1{
+            /*border:2px solid red;*/
+            height:100vh;
+            width:65vw;
+            background-image: url('sun-featyred.jpg');
+            background-size: cover;
+        }
+        .box2{
+            /*border:2px solid green;*/
+            height:100vh;
+            width:34vw; 
+            /*background-color: rgb(0, 0, 0);*/
+            background-image: url('img.jpeg');
+        }
+  form.example input[type=text] {
+  padding: 10px;
+  font-size: 17px;
+  float: left;
+  width: 74%;
+  background-image: url('img.jpeg');
+}
+::placeholder{
+    color: white;
+    opacity:50%;
+}
+/* Style the submit button */
+form.example button {
+  float: left;
+  width: 20%;
+  padding: 11px;
+  background: orange;
+  
+  font-size: 17px;
+  border: none; /* Prevent double borders */
+  cursor: pointer;
+}
+
+form.example button:hover {
+  background: #0b7dda;
+}
+
+/* Clear floats */
+form.example::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+li{
+    list-style-type: none;
+    color:white;
+    opacity:50%;
+}
+.hori{
+    width:81%;
+    text-align: center;
+    margin-left: 37px;
+    margin-right: 5px;
+}
+.sp1{
+
+    color:white;
+    padding-left:37px;
+    float:left;
+    /*margin-top:5px;
+    margin-bottom:3px;*/
+}
+.sp2{
+    color:white;
+    padding-right:37px;
+    float:right;
+    /*margin-top:5px;
+    margin-bottom:3px;*/
+}
+.inside_box{
+    display:flex;
+    flex-direction:row;
+    margin-top: 60vh;
+    margin-left: 9vw;
+   /* align-items:flex-end;*/
+   font-family: 'Roboto Condensed', sans-serif;
+   font-size:88px;
+    color:white;
+}
+
+#sup{
+    font-size:30px;
+}
+.london{
+    font-size: 43px;
+    padding-left: 5px;
+   
+}
+.date{
+    padding-bottom:0px;
+    font-size:16px;
+    color:white;
+    
+}
+.cloud{
+    height:41px;
+    width:46px;
+    margin-left:25px;
+    background-image:url('sun.png');
+    background-size: cover;
+}
+.type{
+    color:white;
+    font-size:16px;
+    padding-top:30px;
+}
+.container{
+    margin:10px;
+    padding:10px;
+}
+body{
+    background-image: url('bgg.jpeg');
+}
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box1">
+          <div class="inside_box">
+           16<sup id="sup">o</sup><span class="london">London <wbr> <p class="date">06:09-Monday,5 sep '21</p></span>
+           <span class="cloud"><p class="type">Cloudy-sunny</p></span>
+          </div>
+         
+        </div>
+        <div class="box2">
+            <form class="example">
+                <input type="text" placeholder="Another location" name="search">
+                <button type="submit"><i class="fa fa-search"></i></button>
+              </form>
+            <br>
+            <ul>
+                <li>Birmingham</li>
+                <br><br>
+                <li>New York</li>
+                <br><br>
+                <li>Kolkata</li><br><br>
+                <li>Melbourne</li><br><br>
+            </ul>
+            <hr class="hori">
+            <h3 style="color:blanchedalmond; padding-left: 37px; ">Weather Details</h3>
+            <br><br>
+            <span class="sp1">Cloudy</span>
+            <span class="sp2">86%</span>
+           <br><br>
+            <span class="sp1">Humidity</span>
+            <span class="sp2">62%</span>
+            <br><br>
+            <span  class="sp1">Wind</span>
+            <span  class="sp2">8km/h</span>
+            <br><br>
+            <hr class="hori">
+        </div>
+    </div>
+</body>
+</html>
